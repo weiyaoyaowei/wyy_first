@@ -1,0 +1,152 @@
+/* 设置背景图片 */
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url("homepage_material/background.png"); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-attachment: fixed;
+    max-width: 100%;
+    height: 100%;
+}
+
+/* 设置项目列表时不使用项目符号 */
+.menu{
+    list-style: none;
+}
+/* 实现首页的二级菜单下拉栏，并设置首页格式 */
+.homepage>li{
+    display: inline-block;
+    position: absolute;
+    margin-left: 18.75%;
+    margin-top: 24%;
+    cursor: pointer;
+    transition: all 0.4s;      /*运行时间为0.4s*/
+}
+.homepage:hover{
+    transform: scale(1.01);/*鼠标放在上面变大1.01倍*/
+}
+
+.homepage li  img{
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+.content_home a{
+    text-decoration: none;
+}
+.content_home>li{
+    list-style: none;
+    height: 0;
+}
+.content_home li img{
+    margin-left: -17%;
+    border-radius: 10%; 
+    box-shadow: 5px 5px 5px #888888;
+}
+.homepage>li:hover .content_home>li{
+    height: 60%;
+}
+/* 实现新冠疫情模块的下拉栏，并设置新冠疫情的格式 */
+.covid>li{
+    position: absolute;
+    display: inline-block;
+    margin-left: 36.04%;
+    margin-top: 24%;  
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.covid:hover{
+    transform: scale(1.01);
+}
+.covid li img{
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px #888888;
+}
+.content_cov a{
+     text-decoration: none;
+}
+.content_cov>li{
+    list-style: none;
+    height: 0;
+}
+.content_cov li img{
+    margin-left: -17%;
+    border-radius: 10%; 
+    box-shadow: 5px 5px 5px #888888;
+}
+.covid>li:hover .content_cov>li{
+    height: 60%;
+}
+/* 实现抗疫英雄模块的下拉栏，并设置抗疫英雄的格式 */
+.hero>li{
+    position: absolute;
+    display: inline-block;
+    margin-left: 53.33%;
+    margin-top: 24%;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.hero:hover{
+    transform: scale(1.01);
+}
+.hero li img{
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px #888888;
+}
+.content_hero a{
+    text-decoration: none;
+}
+.content_hero>li{
+    list-style: none;
+    height: 0;
+}
+.content_hero li img{
+    margin-left: -17%;
+    border-radius: 10%; 
+    box-shadow: 5px 5px 5px #888888;
+}
+.hero>li:hover .content_hero>li{
+    height: 60%;
+}
+
+
+/* 实现抗疫歌曲模块的下拉栏，并设置抗疫歌曲的格式 */
+.music>li{
+    position: absolute;
+    display: inline-block;
+    margin-left: 70.6%;
+    margin-top: 24%;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.music:hover{
+    transform: scale(1.01);
+}
+.music li img{
+    width: 55%;
+    height: 55%;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px #888888;
+}
+.content_mus a{
+    text-decoration: none;
+}
+.content_mus>li{
+    list-style: none;
+    height: 0;
+}
+.content_mus li img{
+    margin-left: -17%;
+    border-radius: 10%; 
+    box-shadow: 5px 5px 5px #888888;
+}
+.music>li:hover .content_mus>li{
+    height: 60%;
+}

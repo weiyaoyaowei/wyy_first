@@ -1,0 +1,58 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url("./Pictures/背景.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.swiper-pagination .swiper-pagination-bullet:nth-child(1) {
+    background-image: url('./Pictures/home.png');
+    background-size: 100%;
+}
+.swiper-pagination .swiper-pagination-bullet:nth-child(2) {
+    background-image: url('./Pictures/你要相信这不是最后一天.jpg');
+    background-size: 100%;
+}
+.swiper-pagination .swiper-pagination-bullet:nth-child(3) {
+    background-image: url('./Pictures/会好的.png');
+    background-size: 100%;
+}
+/*设置区域样式*/
+.vedioBox{
+    margin-left: 8%;
+    width: 10%;
+    height: 100vh;
+    margin-top: 1%;
+}
+
+.vedioBox embed{
+    width: 60%;
+    height: 80%;
+    margin-top: 5%
+}
+.swiper-pagination{
+    width: 9.77%;
+    height: 19.68%;
+    right: 0;
+    top: 0;
+}
+.swiper-pagination-bullet{
+    width: 35%;
+    height: 100%;
+    display: block;
+    box-shadow: 5px 5px 5px #888888;
+    transition: all 0.4s;
+}
+.swiper-pagination-bullet:hover{
+    transform: scale(1.1);
+}
+.swiper-container-horizontal>.swiper-pagination-bullets{
+    right: 0;
+    width: 30%;
+    top: 10%;
+    left: 80%;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
+    margin: 20px 0;
+}

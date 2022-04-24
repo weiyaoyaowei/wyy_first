@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新冠疫情</title>
+    <link rel="stylesheet" href="covid.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="../font/font.css">
+    <!-- 引入字体 -->
+    <script type="text/javascript" src="covid.js"></script>
+    <style>
+        .pointer {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body id="main">
+    <!-- 导航栏 -->
+    <div class="nav">
+        <a href="../homepage/homepage.html" id="demo1" target="_headFrame">首页</a>
+        <a href="../covid/covid.html" id="demo2" target="_headFrame">新冠疫情</a>
+        <a href="../hero/hero.html" id="demo3" target="_headFrame">战疫英雄</a>
+        <a href="../music/music.html" id="demo4" target="_headFrame">抗疫歌曲</a>
+    </div>
+    <!-- 首先在外面设置一个div控制此区域的大小 -->
+    <div class="div_size">
+        <!-- 嵌套div用于显示文本 -->
+        <div class="text_area box">
+            <p id="information" class="">2019冠状病毒病（英语：Coronavirus disease
+                2019，缩写：COVID-19），是一种由严重急性呼吸系统综合征冠状病毒引发的传染病。该病最早于2019年末于湖北省武汉市发现，其后此病在全球各国大规模爆发并急速扩散。截至2020年11月7日，全球已有190个国家和地区累计报告逾4,948.2万名确诊病例，逾124万名患者死亡，目前仍在持续扩散中。
+            </p>
+            <!-- 两条边框线显示动画 -->
+            <div class="border-top"></div>
+            <div class="border-bottom"></div>
+        </div>
+        <!-- 临时图片显示当前正在观看的模块 -->
+        <div>
+            <img src="covid_material/logo/synopsis_logo.png" class="temp_image cookies">
+        </div>
+        <!-- 设置一个区域显示logo -->
+        <div class="image_area cookies">
+            <div>
+                <img src="covid_material/logo/synopsis_logo.png" class="introduction icon pointer"
+                    onclick="clickshow(0)">
+            </div>
+            <div>
+                <img src="covid_material/logo/spread_logo.png" class="spread icon pointer" onclick="clickshow(1)">
+            </div>
+            <div>
+                <img src="covid_material/logo/symptom_logo.png" class="symptom icon pointer" onclick="clickshow(2)">
+            </div>
+            <div>
+                <img src="covid_material/logo/prevention_logo.png" class="prevention icon pointer"
+                    onclick="clickshow(3)">
+            </div>
+        </div>
+</body>
+<ml>

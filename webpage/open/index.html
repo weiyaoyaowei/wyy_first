@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link rel="stylesheet" href="scroll.css">
+    <link rel="stylesheet" href="../font/font.css">
+    <link rel="stylesheet" href="button.css">
+</head>
+<body>
+    <div>
+    <div class="box1">
+        <p> 我的 </p>
+        <p>2020</p>
+    </div>
+    <div class="scroll">
+        <div><div>online course</div></div>
+        <div><div>submit health code</div></div>
+        <div><div>stay at home</div></div>
+    </div>
+    <div class="question_1">
+        <p>What are you doing in 2020 ?</p>
+    </div>
+    <div class="question_2">
+        <p>Why are you doing this?</p>
+    </div>
+    <div class="answer">
+        <p>Because of COVID-19</p>
+    </div>
+    <div class="next">
+        <p>Now, I'll show you ...</p>
+    </div>
+</div>
+<div class="button_class">
+    <button class="login">
+        <p>click</p>
+        <div class="loading">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <svg class="checkmark" width="30px" height="30px" stroke="black" fill="none">
+            <polyline points="2,10 12,18 28,2">
+
+            </polyline>
+        </svg>
+
+    </button>
+</div>
+    <script src="js.js"></script>
+    <script>
+          //播放动画
+          $($('.login').click(
+            function () {
+                $(this).toggleClass('active');
+                setTimeout(
+                    () => {
+                        $(this).toggleClass('verity')
+                    }, 2000
+                )
+            }
+        ))
+            //点击按钮后两秒打开链接，播放完动画
+        document.querySelector('.login').addEventListener('click', function () {
+            setTimeout(function () { window.location.href = '../homepage/homepage.html' }, 4000);
+        })
+        // 让按钮延迟出现
+        setTimeout(function () {
+            document.querySelector('.login').style.opacity = 0.7;
+        }, 1000)
+    </script>
+</body>
+</html>

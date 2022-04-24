@@ -1,0 +1,21 @@
+.nav{
+    margin-left: 25%;
+    margin-top: 2%;
+    border-top:43px ;
+    border-bottom: 0;
+    width: 1000px;
+    height:45px;
+    font-family: "myFont","微软雅黑"; 
+    font-size: x-large;
+}
+.nav a{
+    display: inline-block;
+    color:#666666;
+    text-decoration: none;
+    height: 28px;
+    padding:0 51px;
+}
+#demo2{
+    color:#f1a787;
+}
+/* 设置导航栏的字体和样式 */

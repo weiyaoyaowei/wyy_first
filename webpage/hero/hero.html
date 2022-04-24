@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hero.css">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="../font/font.css">
+    <title>抗疫英雄</title>
+    <style>
+        .swiper-button-prev,.swiper-button-next{
+            color: #a4b0be;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <div class="nav">
+        <a href="../homepage/homepage.html" id="demo1" target="_headFrame">首页</a>
+        <a href="../covid/covid.html" id="demo2" target="_headFrame">新冠疫情</a>
+        <a href="../hero/hero.html" id="demo3" target="_headFrame">战疫英雄</a>
+        <a href="../music/music.html" id="demo4" target="_headFrame">抗疫歌曲</a>
+    </div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <!-- 钟南山文案 -->
+                <div class="zhong_text">
+                    <img src="hero_material/zhong/zhong_text.png"/>
+                </div>
+                <!-- 钟南山轮播图 -->
+                <div class="slidershow middle"> 
+                    <div class="slides">
+                    <input type="radio" name="zhong" id="zhong_1" checked>
+                    <input type="radio" name="zhong" id="zhong_2" >
+                    <input type="radio" name="zhong" id="zhong_3" >
+                        <div class="slide s1">
+                            <img src="hero_material/zhong/zhong_1.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="hero_material/zhong/zhong_2.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="hero_material/zhong/zhong_3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="navigation">
+                        <label for="zhong_1" class="bar"></label>
+                        <label for="zhong_2" class="bar"></label>
+                        <label for="zhong_3" class="bar"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <!-- 医护人员文案 -->
+                <div class="doc_text">
+                    <img src="hero_material/doc/doc_text.png"/>
+                </div>
+                <!-- 医护人员轮播图 -->
+                <div class="doc">
+                <div class="slidershow middle"> 
+                    <div class="slides">
+                    <input type="radio" name="doc" id="doc_1" checked>
+                    <input type="radio" name="doc" id="doc_2" >
+                    <input type="radio" name="doc" id="doc_3" >
+                        <div class="slide s1">
+                            <img src="hero_material/doc/doc_1.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="hero_material/doc/doc_2.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="hero_material/doc/doc_3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="navigation">
+                        <label for="doc_1" class="bar"></label>
+                        <label for="doc_2" class="bar"></label>
+                        <label for="doc_3" class="bar"></label>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <!-- 社会群众文案 -->
+                <div class="doc_text">
+                    <img src="hero_material/public/public_text.png"/>
+                </div>
+                <!-- 社会群众轮播图 -->
+                <div class="public">
+                    <div class="slidershow middle"> 
+                        <div class="slides">
+                        <input type="radio" name="public" id="public_1" checked>
+                        <input type="radio" name="public" id="public_2" >
+                        <input type="radio" name="public" id="public_3" >
+                            <div class="slide s1">
+                                <img src="hero_material/public/picture_1.png" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="hero_material/public/picture_2.png" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="hero_material/public/picture_3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="navigation">
+                            <label for="public_1" class="bar"></label>
+                            <label for="public_2" class="bar"></label>
+                            <label for="public_3" class="bar"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    <script src="swiper-bundle.min.js"> </script>
+    <script>        
+    var mySwiper = new Swiper ('.swiper-container', {
+        direction: 'horizontal', // 垂直切换选项
+        loop: true, // 循环模式选项
+        // 如果需要前进后退按钮
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    })        
+    </script>
+</body>
+</html>
